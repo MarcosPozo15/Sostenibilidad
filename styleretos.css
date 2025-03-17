@@ -1,0 +1,52 @@
+/* Estilos generales para la página de retos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Estilos para la sección de imágenes */
+.photos .image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.photos img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el video */
+.video iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* Estilos para el mapa conceptual */
+.mapa-conceptual img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
