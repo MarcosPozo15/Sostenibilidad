@@ -5,6 +5,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+   
 }
 
 h1, h2 {
@@ -51,21 +52,32 @@ section {
     border-radius: 8px;
 }
 /* Menú de navegación */
+.dropdownmenu{
+    
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    height: 40px;
+    
+
+}
 .dropdownmenu ul, .dropdownmenu li {
     margin: 0px;
     padding: 0px;
+ 
 }
 
 .dropdownmenu ul {
     background: rgb(0, 0, 0);
     list-style: none;
-    width: 100%;
+   
 }
 
 .dropdownmenu li {
     float: left;
     position: relative;
-    width: auto;
+    
+    
 }
 
 .dropdownmenu a {
@@ -109,6 +121,11 @@ li:hover ul#submenu {
 }
 
 nav {
+    width: 100%;
+    
+}
+
+nav img{
     width: 100%;
 }
 
