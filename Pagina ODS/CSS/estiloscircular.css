@@ -1,3 +1,16 @@
+/* Estilos responsivos para grid de contenido */
+@media (min-width: 600px) {
+    .grid-contenido {
+      grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 900px) {
+    .grid-contenido {
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 /* Estilos generales para la página de retos */
 body {
     font-family: Arial, sans-serif;
@@ -5,11 +18,10 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-   
 }
 
 h1, h2 {
-    color: #2c3e50;
+    color: #502c44;
 }
 
 h1 {
@@ -32,7 +44,7 @@ section {
 }
 
 .photos img {
-    width: 30%;
+    width: 40%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -51,33 +63,31 @@ section {
     margin: 20px auto;
     border-radius: 8px;
 }
+
 /* Menú de navegación */
-.dropdownmenu{
-    
+.dropdownmenu {
     box-sizing: border-box;
     width: 100%;
     background-color: rgb(49, 49, 49);
     height: 40px;
-    
-
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
+
 .dropdownmenu ul, .dropdownmenu li {
     margin: 0px;
     padding: 0px;
- 
 }
 
 .dropdownmenu ul {
     background: rgb(0, 0, 0);
     list-style: none;
-   
 }
 
 .dropdownmenu li {
     float: left;
     position: relative;
-    
-    
 }
 
 .dropdownmenu a {
@@ -122,10 +132,9 @@ li:hover ul#submenu {
 
 nav {
     width: 100%;
-    
 }
 
-nav img{
+nav img {
     width: 100%;
 }
 
@@ -157,3 +166,91 @@ nav img{
     visibility: visible;
 }
 
+/* Imagen del círculo */
+.grid-contenido .circulo img {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    height: 300px;
+    width: 40%;
+}
+
+/* Tabla con grid */
+.tabla-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.tabla-grid div {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.tabla-grid .titulo {
+    font-weight: bold;
+    background-color: #d2f4d2;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1%;
+    background-color: #ddd;
+    margin-top: 30px;
+}
+
+/* NUEVOS ESTILOS RESPONSIVE */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Contenedor principal en grid (base) */
+.grid-contenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Imágenes y multimedia responsive */
+img, iframe, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* NAV responsive base */
+@media (max-width: 768px) {
+    .dropdownmenu ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .dropdownmenu a {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Tablas apiladas en pantallas pequeñas */
+@media (max-width: 600px) {
+    .tabla-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-contenido .circulo img {
+        width: 90%;
+        height: auto;
+    }
+}
